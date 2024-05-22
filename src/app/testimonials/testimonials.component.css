@@ -1,0 +1,69 @@
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    max-width: 300px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    width: 30%;
+  }
+  
+  .username {
+    font-weight: bold;
+    width: 30%;
+  }
+  
+  .userTestimonial {
+    clear: both;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    width: 100%;
+    
+  }
+  /* desktop */
+  @media (max-width: 1280px) {
+    .container {
+      width: 1440px;
+      padding-left: 32px;
+      padding-right: 32px;
+      columns: 12;
+      column-gap: 32px;
+    }
+  }
+  /* tablet */
+  @media (max-width: 100%) {
+    .container {
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+      columns: 6;
+      column-gap: 32px;
+    }
+  }
+  /* phone */
+  @media (max-width: 100%) {
+    .container {
+      width: 375px;
+      padding-left: 16px;
+      padding-right: 16px;
+      columns: 4;
+      column-gap: 16px;
+    }
+  }
+
+  
+
+  

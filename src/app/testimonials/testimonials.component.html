@@ -1,0 +1,14 @@
+<div class="container" *ngIf="items.length; else noData">
+    <div  *ngFor="let item of items">
+        <img class="avatar" [src]="item.imageUrl" alt="">
+          <h3 class="name">{{ item.name }}</h3>
+          <p class="userName">{{ item.userName }}</p>
+          <p class="userTestimonial">{{ item.userTestimonial }}</p>
+     
+      </div>
+  </div>
+  
+  <ng-template #noData>
+    <p>No items to display.</p>
+  </ng-template>
+  
